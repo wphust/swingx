@@ -3,7 +3,7 @@
   <parent>
     <artifactId>swingx-demos</artifactId>
     <groupId>org.swinglabs.swingx</groupId>
-    <version>1.6.5-1-SNAPSHOT</version>
+    <version>1.6.6-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>swingx-demos-swingxset</artifactId>
@@ -11,6 +11,26 @@
   <name>SwingXSet</name>
   <description>A version of SwingSet3 that uses SwingX components to build the base application.</description>
   <dependencies>
+  <!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <scope>test</scope>
+</dependency>
+
+  <dependency>
+        <groupId>org.jdesktop</groupId>
+        <artifactId>appframework</artifactId>
+        <version>1.0.5</version>
+      </dependency>
+       <dependency>
+      <groupId>javax.jnlp</groupId>
+      <artifactId>jnlp-api</artifactId>
+      <version>7.0</version>
+      <scope>system</scope>
+      <systemPath>${java.home}/lib/javaws.jar</systemPath>
+    </dependency>
+    
   	<dependency>
   		<groupId>${project.groupId}</groupId>
   		<artifactId>swingx-core</artifactId>

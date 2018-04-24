@@ -1,3 +1,7 @@
 # Maven output dirs
 swingx-*/target/
 
+.settings
+.project
+.classpath
+target

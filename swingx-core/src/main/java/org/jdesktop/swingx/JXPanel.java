@@ -24,6 +24,7 @@ package org.jdesktop.swingx;
 import static org.jdesktop.swingx.util.GraphicsUtilities.createCompatibleTranslucentImage;
 
 import java.awt.AlphaComposite;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Composite;
 import java.awt.Dimension;
@@ -505,7 +506,7 @@ public class JXPanel extends JPanel implements AlphaPaintable, BackgroundPaintab
     public void setBackground(Color bg) {
         super.setBackground(bg);
         
-        SwingXUtilities.installBackground(this, bg);
+        //SwingXUtilities.installBackground(this, bg);
     }
     
     /**

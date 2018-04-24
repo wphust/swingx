@@ -101,7 +101,7 @@ public class DemoCreator {
             try {
                 demoList.addAll(readDemoClassNames(
                         new InputStreamReader(getClass().getResourceAsStream(metaSource))));
-            } catch (IOException ex) {
+            } catch (Exception ex) {
                 exception = ex;
                 LOG.log(Level.WARNING, "unable to read resource: " + metaSource, ex);
             }

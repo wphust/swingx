@@ -12,13 +12,12 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import javax.swing.SortOrder;
 import javax.swing.RowSorter.SortKey;
+import javax.swing.SortOrder;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-import org.jdesktop.application.session.PropertySupport;
-import org.jdesktop.application.session.SplitPaneState;
+import org.jdesktop.application.SessionStorage.Property;
 import org.jdesktop.swingx.JXTable;
 import org.jdesktop.swingx.JXTaskPane;
 import org.jdesktop.swingx.sort.SortUtils;
@@ -71,7 +70,7 @@ public class XProperties {
     /**
      * Session storage support for JXTaskPane.
      */
-    public static class XTaskPaneProperty implements PropertySupport {
+    public static class XTaskPaneProperty implements Property {
 
         @Override
         public Object getSessionState(Component c) {
@@ -134,7 +133,7 @@ public class XProperties {
     /**
      * Session storage support for JXTable.
      */
-    public static class XTableProperty implements PropertySupport {
+    public static class XTableProperty implements Property{
 
         public Object getSessionState(Component c) {
             checkComponent(c);
